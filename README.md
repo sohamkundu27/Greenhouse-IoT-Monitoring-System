@@ -1,6 +1,5 @@
 # Greenhouse IoT Monitoring System
  
-Here’s a clean, professional, and **calm** README template for your **Greenhouse Monitoring System** project on GitHub. This includes purpose, system overview, tools used, and how it works.
 
 ---
 
