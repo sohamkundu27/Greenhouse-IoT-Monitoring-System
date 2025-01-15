@@ -1,7 +1,7 @@
 #include <wiringPi.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <stdint.h>
+#include <stdlib.h> //memory allocation, programm control, searching sort. general libary
+#include <stdint.h> // diff integer type. uint_8. library useful for keep the size constast
 
 #define TRIG 4 // WiringPi pin 4 (GPIO 23)
 #define ECHO 5 // WiringPi pin 5 (GPIO 24)

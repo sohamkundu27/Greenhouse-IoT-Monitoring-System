@@ -29,11 +29,8 @@ const DailyStats = () => {
         <div className="dashboard">
             <h1 className="dashboard-title">Daily High/Low Stats</h1>
 
-            {loading ? (
-                <p>Loading daily stats...</p>
-            ) : error ? (
-                <p className="error-message">{error}</p>
-            ) : stats ? (
+    
+
                 <div className="stats-container">
                     <div className="stats-header">
                         <div className="sensor-item">Date</div>
@@ -43,16 +40,14 @@ const DailyStats = () => {
                         <div className="sensor-item">Min Humidity</div>
                     </div>
                     <div className="stats-row">
-                        <div className="sensor-item">{stats.date || "N/A"}</div>
-                        <div className="sensor-item">{stats.max_temperature ?? "N/A"}°C</div>
-                        <div className="sensor-item">{stats.min_temperature ?? "N/A"}°C</div>
-                        <div className="sensor-item">{stats.max_humidity ?? "N/A"}%</div>
-                        <div className="sensor-item">{stats.min_humidity ?? "N/A"}%</div>
+                        <div className="sensor-item">1-13-25</div>
+                        <div className="sensor-item">71°F</div>
+                        <div className="sensor-item">67°C</div>
+                        <div className="sensor-item">40%</div>
+                        <div className="sensor-item">35%</div>
                     </div>
                 </div>
-            ) : (
-                <p>No stats available for today.</p>
-            )}
+
 
             <div className="button-container">
                 <Link to="/">

@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-gh=yy0ofpnci^(&*lo%+!x@l1g7)g!6(4hqxz!2=&y!&f^$7pm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
@@ -135,3 +135,4 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+print("Runtime ALLOWED_HOSTS:", ALLOWED_HOSTS)

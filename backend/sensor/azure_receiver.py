@@ -30,7 +30,7 @@ def on_event(partition_context, event):
     """
     try:
         # Parse the event data
-        raw_data = json.loads(event.body_as_str())
+        raw_data = json.loads(event.body_as_str()) # json string to python object
         print(f"Received raw event: {raw_data} from partition: {partition_context.partition_id}")
 
         # Map the incoming event data to match the SensorData fields
@@ -64,7 +64,7 @@ def main():
         with client:
             while True:
                 client.receive(
-                    on_event=on_event,
+                    on_event=on_event, #call back, not explicitly called. automatically called by client
                     starting_position="@latest",  # Only read the latest message
                 )
                 time.sleep(60)  # Wait for 1 minute before fetching the next message
